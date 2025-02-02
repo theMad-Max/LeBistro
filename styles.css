@@ -42,6 +42,7 @@ body {
   left: 50%; 
   top: 0; 
   width: 50%; 
+  margin-left: -20px;
 } 
 
 .right-side-nav { 
@@ -289,7 +290,7 @@ body {
   padding: 50px 5%;
   border-radius: 15px; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-
+  
 }
 
 .menu-group {
@@ -533,29 +534,29 @@ body {
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
   text-shadow: 1px 1px 2px #000;
-  background-image: url('img/bg-contacts.webp'); /* Фоновое изображение */
+  background-image: url('img/bg-contacts.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   margin-bottom: 2em;
-  border-radius: 15px; /* Скругленные углы */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Тень */
-  margin-left: -10px; /* Добавлено для смещения секции левее */
-  overflow: hidden; /* Убрано горизонтальное прокручивание */
+  border-radius: 15px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+ 
+  overflow: hidden; 
 }
 
 .section-title {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 10px;
-  text-transform: uppercase; /* Преобразование текста */
-  letter-spacing: 2px; /* Межбуквенное расстояние */
+  text-transform: uppercase; 
+  letter-spacing: 2px; 
 }
 
 .section-subtitle {
   font-size: 1.5rem;
   margin-bottom: 20px;
-  color: #ccc; /* Цвет подзаголовка */
+  color: #ccc;
 }
 
 .review {
@@ -565,7 +566,7 @@ body {
   padding: 20px;
   border-radius: 10px;
   margin-bottom: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Тень */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
 }
 
 .review-name {
