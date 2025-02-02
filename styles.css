@@ -303,6 +303,10 @@ body {
 
 }
 
+.menu-item-price{
+  color: orange;
+}
+
 .menu-item {
   display: flex;
   align-items: center; 
@@ -404,7 +408,7 @@ body {
 }
 
 .menu-item-text {
-  padding-left: 2em; /* Добавлено значение отступа слева */
+  padding-left: 2em; 
 }
 
 .menu-item-price {
@@ -541,7 +545,7 @@ body {
   margin-bottom: 2em;
   border-radius: 15px; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
- 
+  margin-left: -10px; 
   overflow: hidden; 
 }
 
