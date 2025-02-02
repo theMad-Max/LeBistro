@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Бронирование столика</title>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-image: url(img/bg-contacts.webp);
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(img/bg-contacts.webp);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    }
 
-        .reservation-form {
+.reservation-form {
     background-color: rgb(240, 240, 240);
     padding: 20px;
     border-radius: 10px;
@@ -25,48 +25,55 @@
 }
 
 
-        .reservation-form h2 {
-            text-align: center;
-            margin-bottom: 20px;
+.reservation-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    }
+
+.form-group {
+    margin-bottom: 15px;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
         }
 
-        .form-group {
-            margin-bottom: 15px;
-            padding: 10px;
-            text-decoration: none;
-            color: #000;
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
         }
 
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
         }
 
-        .form-group input {
-            width: 100%;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+.form-group input[type="date"] {
+    padding: 6px;
         }
 
-        .form-group input[type="date"] {
-            padding: 6px;
-        }
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none; 
+}
 
-        .form-group button {
-            width: 100%;
-            padding: 10px;
-            background-color: orange;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
+.form-group button a {
+    color: white; 
+    text-decoration: none; 
+}
 
-        .form-group button:hover {
-            background-color: darkorange;
-        }
+.form-group button:hover {
+    background-color: darkorange;
+}
+
     </style>
 </head>
 <body>
@@ -90,8 +97,9 @@
                 <input type="date" id="date" name="date" required>
             </div>
             <div class="form-group">
-                <button type="submit"><a href="index.html">Забронировать</a></button>
+                <button type="submit" class="reservation-btn"><a href="index.html" class="reservation-link">Забронировать</a></button>
             </div>
+            
         </form>
     </div>
 </body>
