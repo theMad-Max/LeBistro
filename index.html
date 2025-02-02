@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeBistro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-logo-nav">
+            <div class="header-logo">
+                <img src="img/logo.png" alt="Логотип LeBistro">
+            </div>
+            <div class="mobile-menu"> 
+                <img class="menu-btn" src="icons/menu.svg" alt="">
+                <nav class="right-side-nav">  
+                    <div class="right-side-close-btn"> 
+                        <img class="close-btn" src="icons/close.svg" alt="">
+                    </div> 
+                    <div class="nav-list">
+                        <a href="#">Главная</a>
+                        <a href="#about">О нас</a>
+                        <a href="#menu">Наше меню</a>
+                        <a href="#reviews">Отзывы</a>
+                        <a href="#contacts">Контакты</a>
+                    </div> 
+                </nav> 
+            </div> 
+            <div class="header-nav desktop-menu "> 
+                <a class="btn1" href="#">Главная</a>
+                <a class="btn1" href="#about">О нас</a>
+                <a class="btn1" href="#menu">Наше меню</a>
+                <a class="btn1" href="#reviews">Отзывы</a>
+                <a class="btn1" href="#contacts">Контакты</a> 
+            </div> 
+        </div>
+        <div class="header-description">
+            <div class="header-title">Добро пожаловать в LeBistro</div>
+            <div class="header-text">Ощутите изысканную кухню и элегантную атмосферу нашего ресторана. Присоединяйтесь к нам для незабываемого кулинарного путешествия.</div>
+            <button class="header-btn"><a href="boocking.htmls" class="header-link">Забронировать</a></button>
+
+
+        </div>
+    </header>
+
+    <section id="about" class="section-about">
+        <div class="section-title">О нас</div>
+        <div class="section-content">
+            LeBistro - это место, где сочетаются традиции и инновации. Мы предлагаем вам уникальные блюда, приготовленные с любовью и вниманием к деталям. Наш ресторан славится своей уютной атмосферой и высоким уровнем обслуживания. Мы стремимся создать для вас незабываемые кулинарные впечатления, используя только свежие и качественные ингредиенты. В нашем меню вы найдете разнообразные блюда, которые удовлетворят вкусы самых требовательных гурманов. Приходите к нам и насладитесь изысканными блюдами в приятной обстановке.
+        </div>
+    </section>
+    
+
+    <div class="slider-container">
+        <div class="slider-title">Блюда от самого шефа</div>
+        <div class="slider">
+            <div class="slide">
+                <img src="img/Teramisu.jpg" alt="Блюдо 1">
+                <div class="slide-title">тирамису</div>
+            </div>
+            <div class="slide">
+                <img src="img/steik.jpeg" alt="Блюдо 2">
+                <div class="slide-title">Блюдо 2</div>
+            </div>
+            <div class="slide">
+                <img src="img/soup.webp" alt="Блюдо 3">
+                <div class="slide-title">Блюдо 3</div>
+            </div>
+            <div class="slide">
+                <img src="img/Carbonara.webp" alt="Блюдо 4">
+                <div class="slide-title">Блюдо 4</div>
+            </div>
+            <div class="slide">
+                <img src="img/steik.jpeg" alt="Блюдо 5">
+                <div class="slide-title">Блюдо 5</div>
+            </div>
+            <div class="slide">
+                <img src="img/soup.webp" alt="Блюдо 6">
+                <div class="slide-title">Блюдо 6</div>
+            </div>
+        </div>
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+    
+    
+    
+
+
+
+    <div id="menu" class="menu">
+        <div class="menu-menu">
+            <img src="img/menu-text.png" alt="">
+        </div>
+        <h2 class="menu-group-heading">
+            Горячие блюда
+        </h2>
+        <div class="menu-group">
+            <div class="menu-item">
+                <img class="menu-item-image" src="img/steik.jpeg" alt="">
+                <div class="menu-item-text">
+                    <h3 class="menu-item-heading">
+                        <span class="menu-item-name">Стейк из говядины</span>
+                        <span class="menu-item-price">12.90 руб.</span>
+                    </h3>
+                    <p class="menu-item-description">
+                        Сочный стейк из говядины, приготовленный до идеальной степени прожарки.
+                    </p>
+                    <button class="details-btn" onclick="toggleDetails(this)">Подробнее</button>
+                    <div class="menu-item-details">
+                        <p>говядина, соль, перец, оливковое масло.</p>
+                        <p>Сочный стейк из говядины, приготовленный до идеальной степени прожарки.</p>
+                    </div>
+                    <div class="cart-controls">
+                        <button class="cart-btn" onclick="addToCart(this)"><img src="icons/Cart.png" alt=""></button>
+                        <button class="cart-btn" onclick="removeFromCart(this)">-</button>
+                        <span class="cart-count">0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img class="menu-item-image" src="img/Carbonara.webp" alt="Паста">
+                <div class="menu-item-text">
+                    <h3 class="menu-item-heading">
+                        <span class="menu-item-name">Паста Карбонара</span>
+                        <span class="menu-item-price">12.90 руб.</span>
+                    </h3>
+                    <p class="menu-item-description">
+                        Классическая паста Карбонара с насыщенным сливочным соусом.
+                    </p>
+                    <button class="details-btn" onclick="toggleDetails(this)">Подробнее</button>
+                    <div class="menu-item-details">
+                        <p>паста, сливки, бекон, пармезан.</p>
+                        <p>Классическая паста Карбонара с насыщенным сливочным соусом.</p>
+                    </div>
+                    <div class="cart-controls">
+                        <button class="cart-btn" onclick="addToCart(this)"><img src="icons/Cart.png" alt=""></button>
+                        <button class="cart-btn" onclick="removeFromCart(this)">-</button>
+                        <span class="cart-count">0</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="menu-item">
+                <img class="menu-item-image" src="img/Carbonara.webp" alt="Паста">
+                <div class="menu-item-text">
+                    <h3 class="menu-item-heading">
+                        <span class="menu-item-name">Паста Карбонара</span>
+                        <span class="menu-item-price">12.90 руб.</span>
+                    </h3>
+                    <p class="menu-item-description">
+                        Классическая паста Карбонара с насыщенным сливочным соусом.
+                    </p>
+                    <button class="details-btn" onclick="toggleDetails(this)">Подробнее</button>
+                    <div class="menu-item-details">
+                        <p>паста, сливки, бекон, пармезан.</p>
+                        <p>Классическая паста Карбонара с насыщенным сливочным соусом.</p>
+                    </div>
+                    <div class="cart-controls">
+                        <button class="cart-btn" onclick="addToCart(this)"><img src="icons/Cart.png" alt=""></button>
+                        <button class="cart-btn" onclick="removeFromCart(this)">-</button>
+                        <span class="cart-count">0</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="menu-item">
+                <img class="menu-item-image" src="img/Carbonara.webp" alt="Паста">
+                <div class="menu-item-text">
+                    <h3 class="menu-item-heading">
+                        <span class="menu-item-name">Паста Карбонара</span>
+                        <span class="menu-item-price">12.90 руб.</span>
+                    </h3>
+                    <p class="menu-item-description">
+                        Классическая паста Карбонара с насыщенным сливочным соусом.
+                    </p>
+                    <button class="details-btn" onclick="toggleDetails(this)">Подробнее</button>
+                    <div class="menu-item-details">
+                        <p>паста, сливки, бекон, пармезан.</p>
+                        <p>Классическая паста Карбонара с насыщенным сливочным соусом.</p>
+                    </div>
+                    <div class="cart-controls">
+                        <button class="cart-btn" onclick="addToCart(this)"><img src="icons/Cart.png" alt=""></button>
+                        <button class="cart-btn" onclick="removeFromCart(this)">-</button>
+                        <span class="cart-count">0</span>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+        <h2 class="menu-group-heading">
+            Салаты
+        </h2>
+        <div class="menu-group">
+            <div class="menu-item">
+                <img class="menu-item-image" src="img/cezar.webp" alt="Цезарь">
+                <div class="menu-item-text">
+                    <h3 class="menu-item-heading">
+                        <span class="menu-item-name">Цезарь</span>
+                        <span class="menu-item-price">15.90 руб.</span>
+                    </h3>
+                    <p class="menu-item-description">
+                        Классический салат с курицей, пармезаном и соусом Цезарь.
+                    </p>
+                    <button class="details-btn" onclick="toggleDetails(this)">Подробнее</button>
+                    <div class="menu-item-details">
+                        <p>курица, салат ромэн, пармезан, соус Цезарь.</p>
+                        <p>Свежий салат с курицей и хрустящими крутонами.</p>
+                    </div>
+                    <div class="cart-controls">
+                        <button class="cart-btn" onclick="addToCart(this)"><img src="icons/Cart.png" alt=""></button>
+                        <button class="cart-btn" onclick="removeFromCart(this)">-</button>
+                        <span class="cart-count">0</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            
+
+
+            <div class="menu-item">
+                <img class="menu-item-image" src="img/cezar.webp" alt="Цезарь">
+                <div class="menu-item-text">
+                    <h3 class="menu-item-heading">
+                        <span class="menu-item-name">Цезарь</span>
+                        <span class="menu-item-price">15.90 руб.</span>
+                    </h3>
+                    <p class="menu-item-description">
+                        Классический салат с курицей, пармезаном и соусом Цезарь.
+                    </p>
+                    <button class="details-btn" onclick="toggleDetails(this)">Подробнее</button>
+                    <div class="menu-item-details">
+                        <p>Полный состав: курица, салат ромэн, пармезан, соус Цезарь.</p>
+                        <p>Описание: Свежий салат с курицей и хрустящими крутонами.</p>
+                    </div>
+                    <div class="cart-controls">
+                        <button class="cart-btn" onclick="addToCart(this)"><img src="icons/Cart.png" alt=""></button>
+                        <button class="cart-btn" onclick="removeFromCart(this)">-</button>
+                        <span class="cart-count">0</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="menu-item">
+                <img class="menu-item-image" src="img/cezar.webp" alt="Цезарь">
+                <div class="menu-item-text">
+                    <h3 class="menu-item-heading">
+                        <span class="menu-item-name">Цезарь</span>
+                        <span class="menu-item-price">15.90 руб.</span>
+                    </h3>
+                    <p class="menu-item-description">
+                        Классический салат с курицей, пармезаном и соусом Цезарь.
+                    </p>
+                    <button class="details-btn" onclick="toggleDetails(this)">Подробнее</button>
+                    <div class="menu-item-details">
+                        <p>Полный состав: курица, салат ромэн, пармезан, соус Цезарь.</p>
+                        <p>Описание: Свежий салат с курицей и хрустящими крутонами.</p>
+                    </div>
+                    <div class="cart-controls">
+                        <button class="cart-btn" onclick="addToCart(this)"><img src="icons/Cart.png" alt=""></button>
+                        <button class="cart-btn" onclick="removeFromCart(this)">-</button>
+                        <span class="cart-count">0</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="menu-item">
+                <img class="menu-item-image" src="img/dishes-1.jpg" alt="Греческий салат">
+                <div class="menu-item-text">
+                    <h3 class="menu-item-heading">
+                        <span class="menu-item-name">Греческий салат</span>
+                        <span class="menu-item-price">13.90 руб.</span>
+                    </h3>
+                    <p class="menu-item-description">
+                        Свежие овощи с фетой, оливками и оливковым маслом.
+                    </p>
+                    <button class="details-btn" onclick="toggleDetails(this)">Подробнее</button>
+                    <div class="menu-item-details">
+                        <p>помидоры, огурцы, фета, оливки, оливковое масло.</p>
+                        <p>Классический греческий салат с ароматными овощами и сыром фета.</p>
+                    </div>
+                    <div class="cart-controls">
+                        <button class="cart-btn" onclick="addToCart(this)"><img src="icons/Cart.png" alt=""></button>
+                        <button class="cart-btn" onclick="removeFromCart(this)">-</button>
+                        <span class="cart-count">0</span>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+    
+    
+    
+
+
+    <section id="reviews" class="section-reviews">
+        <div class="section-title">Отзывы наших клиентов</div>
+        <div class="section-subtitle">Нам очень важно ваше мнение</div>
+        <div class="review">
+            <div class="review-name">Анна Игоревна</div>
+            <div class="review-city">г. Минск</div>
+            <div class="review-text">"LeBistro - это лучшее место для романтического ужина! Еда была восхитительной, а обслуживание на высшем уровне. Обязательно вернемся снова!"</div>
+        </div>
+        <div class="review">
+            <div class="review-name">Игорь Александрович</div>
+            <div class="review-city">г. Гомель</div>
+            <div class="review-text">"Прекрасное место для семейного ужина. Дети были в восторге от десертов, а мы наслаждались уютной атмосферой и вкусными блюдами."</div>
+        </div>
+        <div class="review">
+            <div class="review-name">Алексей Максимович</div>
+            <div class="review-city">г. Гомель</div>
+            <div class="review-text">"Отличное место для деловых встреч. Удобное расположение, приятная атмосфера и вкусная еда. Рекомендую всем своим коллегам."</div>
+        </div>
+        <div class="review">
+            <div class="review-name">Мария Петровна</div>
+            <div class="review-city">г. Витебск</div>
+            <div class="review-text">"Замечательное место для празднования особых событий. Мы отметили здесь годовщину свадьбы, и все было просто великолепно!"</div>
+        </div>
+    </section>
+    
+    
+    
+
+    <section id="contacts" class="section-contacts">
+        <div class="section-title">Контакты</div>
+        <div class="section-content">Мы находимся по адресу: г. Гомель, ул. Советская 20, <br> Телефон:
+            <a href="tel:+1234567890">+375333081854</a>
+             Email: <a href="mailto:info@lebistro.com">info@lebistro.com</div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
